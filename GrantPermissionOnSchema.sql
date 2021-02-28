@@ -1,0 +1,1 @@
+GRANT SELECT ON SCHEMA::fact to fact_Reader

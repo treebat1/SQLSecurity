@@ -1,0 +1,1 @@
+grant view server state to [COLO\Corp BI Admins]

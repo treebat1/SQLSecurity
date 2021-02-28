@@ -1,0 +1,1 @@
+Export-DbaLogin -SQLInstance 10.174.110.218\DATAMARTDEV -ExcludeLogin  UBOC-AD\svc_cl_dm,TestUser,TestLogin01,test1,BUILTIN\Administrators -ExcludeDatabases  -Path D:\P_Drive\SQL2016Migration\Export.sql

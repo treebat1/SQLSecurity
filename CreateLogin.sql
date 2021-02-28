@@ -1,0 +1,13 @@
+﻿USE [master]
+GO
+CREATE LOGIN [UBOC-AD\] FROM WINDOWS WITH DEFAULT_DATABASE=[master]
+GO
+
+
+
+USE [master]
+GO
+CREATE LOGIN [NotWherescape] WITH PASSWORD = '', DEFAULT_DATABASE=[master]
+GO
+
+

@@ -1,0 +1,1 @@
+CREATE USER [COLO\prod-resonancereport] FOR LOGIN [COLO\prod-resonancereport]

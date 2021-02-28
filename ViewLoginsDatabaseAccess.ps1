@@ -1,0 +1,1 @@
+﻿Get-DbaUserPermission -SqlInstance chdc\DATA | Where-Object {$_.Permission -eq "CONNECT" -and $_.Member -eq "uboc-ad\cl_datamart_developers"} | sort-object -property Member, Object, Permission | FT Member, Object, Permission

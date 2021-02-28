@@ -1,0 +1,1 @@
+﻿Get-DbaUserPermission -SqlInstance 10.174.110.218\DATAMARTDEV -Database SSISDB
