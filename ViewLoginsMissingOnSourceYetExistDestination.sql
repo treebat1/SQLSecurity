@@ -1,6 +1,6 @@
 select s.name SourceName, s.sid SourceSID, d.name DestinationName, d.sid DestinationSID
-from [10.174.110.218\DATAMARTDEV].master.sys.server_principals s 
-right join [chdc-car-thsql2\datamartdev].master.sys.server_principals d
+from [\DATAMARTDEV].master.sys.server_principals s 
+right join [\datamartdev].master.sys.server_principals d
 on s.sid = d.sid
 where d.name not like 'NT Service%'
 and d.name not like '##%'
@@ -12,8 +12,8 @@ and s.sid is null
 
 --Opposite.  Exist on Source but not Destination.
 select s.name SourceName, s.sid SourceSID, d.name DestinationName, d.sid DestinationSID
-from [10.174.110.218\DATAMARTDEV].master.sys.server_principals s 
-left join [chdc-car-thsql2\datamartdev].master.sys.server_principals d
+from [\DATAMARTDEV].master.sys.server_principals s 
+left join [\datamartdev].master.sys.server_principals d
 on s.sid = d.sid
 where s.name not like 'NT Service%'
 and s.name not like '##%'
