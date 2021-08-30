@@ -1,5 +1,5 @@
-﻿$Login = 'uboc-ad\ub56406'
+﻿$Login = 'u'
 
-Test-DbaWindowsLogin -SqlInstance car-dmsql-tst\DATAMARTTEST -Login $Login
-Remove-DbaDbUser -SqlInstance car-dmsql-tst\DATAMARTTEST -Confirm -User $Login
-Remove-DbaLogin -SqlInstance car-dmsql-tst\DATAMARTTEST -Login $Login
+Test-DbaWindowsLogin -SqlInstance TEST -Login $Login
+Remove-DbaDbUser -SqlInstance TEST -Confirm -User $Login
+Remove-DbaLogin -SqlInstance TEST -Login $Login
